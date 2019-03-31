@@ -163,27 +163,27 @@
                 <div class="g-text-center--xs">
                     <i class="g-display-block--xs g-font-size-40--xs g-color--white-opacity g-margin-b-30--xs ti-headphone-alt"></i>
                     <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Atención al cliente</h4>
-                    <p class="g-color--white-opacity">4752-0142 / 4753-1637</p>
+                    <p class="g-color--white-opacity">4752-0142 <br> Whatsapp: (011) 15-3822-3885</p>
                 </div>
             </div>
         </div>
-        <form class="center-block g-width-500--sm g-width-550--md">
+        <form action="sender.php" method="post" class="center-block g-width-500--sm g-width-550--md">
             <div class="g-margin-b-30--xs">
-                <input type="text" class="form-control s-form-v3__input" placeholder="* Nombre">
+                <input name="name" id="name" type="text" class="form-control s-form-v3__input" placeholder="* Nombre">
             </div>
             <div class="row g-row-col-5 g-margin-b-50--xs">
                 <div class="col-sm-6 g-margin-b-30--xs g-margin-b-0--md">
-                    <input type="email" class="form-control s-form-v3__input" placeholder="* Email">
+                    <input name="email" id="email" type="email" class="form-control s-form-v3__input" placeholder="* Email">
                 </div>
                 <div class="col-sm-6">
-                    <input type="text" class="form-control s-form-v3__input" placeholder="* Teléfono">
+                    <input name="phone" id="phone" type="text" class="form-control s-form-v3__input" placeholder="* Teléfono">
                 </div>
             </div>
             <div class="g-margin-b-80--xs">
-                <textarea class="form-control s-form-v3__input" rows="5" placeholder="* Mensaje..."></textarea>
+                <textarea name="comment" id="comment" class="form-control s-form-v3__input" rows="5" placeholder="* Mensaje..."></textarea>
             </div>
             <div class="g-text-center--xs">
-                <button type="submit"
+                <button type="submit" name="btsend" id="btsend"
                         class="text-uppercase s-btn s-btn--md s-btn--white-bg g-radius--50 g-padding-x-70--xs g-margin-b-20--xs">
                     Enviar
                 </button>
@@ -242,6 +242,7 @@
                         📦 Envíos a todo el país. <br>
                         ✉️ beatriz.rsmartino@gmail.com <br>
                         ☎️ (011) 4752-0142 <br>
+                        📱 (011) 15-3822-3885 <br>
                         📍 Fábrica: Calle 6 Nº 4283 <br>
                         📍 Administración: Pasaje 103 Nº 325 <br>
                         🔸 Villa Lynch - Pcia. de Bs. As. Argentina

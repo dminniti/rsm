@@ -398,24 +398,24 @@
                 ¿ALGUNA DUDA?</p>
             <h2 class="g-font-size-32--xs g-font-size-36--md" style="color: #ffffff;">CONTACTANOS</h2>
         </div>
-        <form>
+        <form action="sender.php" method="post">
             <div class="row g-margin-b-40--xs">
                 <div class="col-sm-6 g-margin-b-20--xs g-margin-b-0--md">
                     <div class="g-margin-b-20--xs">
-                        <input type="text" class="form-control s-form-v2__input g-radius--50" placeholder="* Nombre">
+                        <input type="text" name="name" id="name" required="required" class="form-control s-form-v2__input g-radius--50" placeholder="* Nombre">
                     </div>
                     <div class="g-margin-b-20--xs">
-                        <input type="email" class="form-control s-form-v2__input g-radius--50" placeholder="* Email">
+                        <input type="email" name="email" id="email" required="required" class="form-control s-form-v2__input g-radius--50" placeholder="* Email">
                     </div>
-                    <input type="text" class="form-control s-form-v2__input g-radius--50" placeholder="* Teléfono">
+                    <input type="text" name="phone" id="phone" required="required" class="form-control s-form-v2__input g-radius--50" placeholder="* Teléfono">
                 </div>
                 <div class="col-sm-6">
-                    <textarea class="form-control s-form-v2__input g-radius--10 g-padding-y-20--xs" rows="8"
+                    <textarea name="comment" id="comment" required="required" class="form-control s-form-v2__input g-radius--10 g-padding-y-20--xs" rows="8"
                               placeholder="* Su mensaje..."></textarea>
                 </div>
             </div>
             <div class="g-text-center--xs">
-                <button type="submit"
+                <button name="btsend" id="btsend" type="submit"
                         class="text-uppercase s-btn s-btn--md s-btn--primary-bg g-radius--50 g-padding-x-80--xs">Enviar
                 </button>
             </div>
@@ -479,6 +479,7 @@
                         📦 Envíos a todo el país. <br>
                         ✉️ beatriz.rsmartino@gmail.com <br>
                         ☎️ (011) 4752-0142 <br>
+                        📱 (011) 15-3822-3885 <br>
                         📍 Fábrica: Calle 6 Nº 4283 <br>
                         📍 Administración: Pasaje 103 Nº 325 <br>
                         🔸 Villa Lynch - Pcia. de Bs. As. Argentina
