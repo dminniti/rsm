@@ -23,30 +23,33 @@
     <link href="css/style.css" rel="stylesheet" type="text/css"/>
     <link href="css/global/global.css" rel="stylesheet" type="text/css"/>
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
 
     <!--Start of Zendesk Chat Script-->
-    <script type="text/javascript">
-      window.$zopim || (function (d, s) {
-        var z = $zopim = function (c) {
-          z._.push(c)
-        }, $ = z.s =
-          d.createElement(s), e = d.getElementsByTagName(s)[0];
-        z.set = function (o) {
-          z.set._.push(o)
-        };
-        z._ = [];
-        z.set._ = [];
-        $.async = !0;
-        $.setAttribute("charset", "utf-8");
-        $.src = "https://v2.zopim.com/?5U4FVLY4w2Ue2EtPDdXSXNM5d4eN21RC";
-        z.t = +new Date;
-        $.type = "text/javascript";
-        e.parentNode.insertBefore($, e)
-      })(document, "script");
-    </script>
+    <!--<script type="text/javascript">-->
+        <!--window.$zopim || (function (d, s) {-->
+            <!--var z = $zopim = function (c) {-->
+                <!--z._.push(c)-->
+            <!--}, $ = z.s =-->
+                <!--d.createElement(s), e = d.getElementsByTagName(s)[0];-->
+            <!--z.set = function (o) {-->
+                <!--z.set._.push(o)-->
+            <!--};-->
+            <!--z._ = [];-->
+            <!--z.set._ = [];-->
+            <!--$.async = !0;-->
+            <!--$.setAttribute("charset", "utf-8");-->
+            <!--$.src = "https://v2.zopim.com/?5U4FVLY4w2Ue2EtPDdXSXNM5d4eN21RC";-->
+            <!--z.t = +new Date;-->
+            <!--$.type = "text/javascript";-->
+            <!--e.parentNode.insertBefore($, e)-->
+        <!--})(document, "script");-->
+    <!--</script>-->
     <!--End of Zendesk Chat Script-->
 
 </head>
@@ -173,14 +176,17 @@
             </div>
             <div class="row g-row-col-5 g-margin-b-50--xs">
                 <div class="col-sm-6 g-margin-b-30--xs g-margin-b-0--md">
-                    <input name="email" id="email" type="email" class="form-control s-form-v3__input" placeholder="* Email">
+                    <input name="email" id="email" type="email" class="form-control s-form-v3__input"
+                           placeholder="* Email">
                 </div>
                 <div class="col-sm-6">
-                    <input name="phone" id="phone" type="text" class="form-control s-form-v3__input" placeholder="* Teléfono">
+                    <input name="phone" id="phone" type="text" class="form-control s-form-v3__input"
+                           placeholder="* Teléfono">
                 </div>
             </div>
             <div class="g-margin-b-80--xs">
-                <textarea name="comment" id="comment" class="form-control s-form-v3__input" rows="5" placeholder="* Mensaje..."></textarea>
+                <textarea name="comment" id="comment" class="form-control s-form-v3__input" rows="5"
+                          placeholder="* Mensaje..."></textarea>
             </div>
             <div class="g-text-center--xs">
                 <button type="submit" name="btsend" id="btsend"
@@ -193,6 +199,20 @@
     <img class="s-mockup-v2" src="img/mockups/pencil-01.png" alt="Mockup Image">
 </div>
 <!-- End Feedback Form -->
+
+
+<!-- Google Map -->
+<section class="s-google-map">
+    <div class="s-google-container g-height-400--xs">
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d821.0899139611878!2d-58.52780777080028!3d-34.595065894801074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb7be97e3a757%3A0xe37da6b62380a77c!2sCalle+103+325%2C+Villa+Lynch%2C+Buenos+Aires%2C+Argentina!5e0!3m2!1ses!2sus!4v1554073024640!5m2!1ses!2sus"
+                width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+    </div>
+</section>
+<!-- End Google Map -->
+
+
 <!--========== END PAGE CONTENT ==========-->
 
 <!--========== FOOTER ==========-->
@@ -242,7 +262,7 @@
                         📦 Envíos a todo el país. <br>
                         ✉️ beatriz.rsmartino@gmail.com <br>
                         ☎️ (011) 4752-0142 <br>
-                        📱 (011) 15-3822-3885 <br>
+                        📱 Whatsapp: (011) 15-3822-3885 <br>
                         📍 Fábrica: Calle 6 Nº 4283 <br>
                         📍 Administración: Pasaje 103 Nº 325 <br>
                         🔸 Villa Lynch - Pcia. de Bs. As. Argentina

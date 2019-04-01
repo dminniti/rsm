@@ -26,9 +26,13 @@
     <link href="css/style.css" rel="stylesheet" type="text/css"/>
     <link href="css/global/global.css" rel="stylesheet" type="text/css"/>
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+
 </head>
 <!-- End Head -->
 
@@ -86,7 +90,8 @@
                             class="s-header__nav-menu-link s-header__nav-menu-link-divider"
                             href="services.html">Servicios</a></li>
                     <li class="s-header__nav-menu-item"><a
-                            class="s-header__nav-menu-link s-header__nav-menu-link-divider -is-active" href="portfolio.html">Galería</a>
+                            class="s-header__nav-menu-link s-header__nav-menu-link-divider -is-active"
+                            href="portfolio.html">Galería</a>
                     </li>
                     <li class="s-header__nav-menu-item"><a
                             class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="contacts.html">Contacto</a>
@@ -250,26 +255,26 @@
             </div>
         </div>
         <!-- Item -->
-        <div class="s-portfolio__item cbp-item motion logos">
-            <div class="s-portfolio__img-effect">
-                <img src="img/970x647/portfolio_7.jpg" alt="Portfolio Image">
-            </div>
-            <div class="s-portfolio__caption-hover--cc">
-                <div class="g-margin-b-25--xs">
-                    <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">RSM - FOTOS</h4>
-                    <p class="g-color--white-opacity">EMPRESA</p>
-                </div>
-                <ul class="list-inline g-ul-li-lr-5--xs g-margin-b-0--xs">
-                    <li>
-                        <a href="img/970x647/portfolio_7.jpg"
-                           class="cbp-lightbox s-icon s-icon--sm s-icon--white-bg g-radius--circle"
-                           data-title="RSM - FOTOS">
-                            <i class="ti-fullscreen"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+        <!--<div class="s-portfolio__item cbp-item motion logos">-->
+            <!--<div class="s-portfolio__img-effect">-->
+                <!--<img src="img/970x647/portfolio_7.jpg" alt="Portfolio Image">-->
+            <!--</div>-->
+            <!--<div class="s-portfolio__caption-hover&#45;&#45;cc">-->
+                <!--<div class="g-margin-b-25&#45;&#45;xs">-->
+                    <!--<h4 class="g-font-size-18&#45;&#45;xs g-color&#45;&#45;white g-margin-b-5&#45;&#45;xs">RSM - FOTOS</h4>-->
+                    <!--<p class="g-color&#45;&#45;white-opacity">EMPRESA</p>-->
+                <!--</div>-->
+                <!--<ul class="list-inline g-ul-li-lr-5&#45;&#45;xs g-margin-b-0&#45;&#45;xs">-->
+                    <!--<li>-->
+                        <!--<a href="img/970x647/portfolio_7.jpg"-->
+                           <!--class="cbp-lightbox s-icon s-icon&#45;&#45;sm s-icon&#45;&#45;white-bg g-radius&#45;&#45;circle"-->
+                           <!--data-title="RSM - FOTOS">-->
+                            <!--<i class="ti-fullscreen"></i>-->
+                        <!--</a>-->
+                    <!--</li>-->
+                <!--</ul>-->
+            <!--</div>-->
+        <!--</div>-->
         <!-- Item -->
         <div class="s-portfolio__item cbp-item logos">
             <div class="s-portfolio__img-effect">
@@ -360,6 +365,51 @@
 </div>
 <!-- End Portfolio -->
 
+<!-- Feedback Form -->
+<div class="g-bg-color--dark" style="margin-top: 2em">
+    <div class="container g-padding-y-80--xs g-padding-y-125--sm">
+        <div class="g-text-center--xs g-margin-b-80--xs">
+            <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--primary g-letter-spacing--2 g-margin-b-25--xs">
+                ¿ALGUNA DUDA?</p>
+            <h2 class="g-font-size-32--xs g-font-size-36--md" style="color: #ffffff;">CONTACTANOS</h2>
+        </div>
+        <form>
+            <div class="row g-margin-b-40--xs">
+                <div class="col-sm-6 g-margin-b-20--xs g-margin-b-0--md">
+                    <div class="g-margin-b-20--xs">
+                        <input type="text" class="form-control s-form-v2__input g-radius--50" placeholder="* Nombre">
+                    </div>
+                    <div class="g-margin-b-20--xs">
+                        <input type="email" class="form-control s-form-v2__input g-radius--50" placeholder="* Email">
+                    </div>
+                    <input type="text" class="form-control s-form-v2__input g-radius--50" placeholder="* Teléfono">
+                </div>
+                <div class="col-sm-6">
+                    <textarea class="form-control s-form-v2__input g-radius--10 g-padding-y-20--xs" rows="8"
+                              placeholder="* Su mensaje..."></textarea>
+                </div>
+            </div>
+            <div class="g-text-center--xs">
+                <button type="submit"
+                        class="text-uppercase s-btn s-btn--md s-btn--primary-bg g-radius--50 g-padding-x-80--xs">Enviar
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+<!-- End Feedback Form -->
+
+<!-- Google Map -->
+<section class="s-google-map">
+    <div class="s-google-container g-height-400--xs">
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d821.0899139611878!2d-58.52780777080028!3d-34.595065894801074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb7be97e3a757%3A0xe37da6b62380a77c!2sCalle+103+325%2C+Villa+Lynch%2C+Buenos+Aires%2C+Argentina!5e0!3m2!1ses!2sus!4v1554073024640!5m2!1ses!2sus"
+                width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+    </div>
+</section>
+<!-- End Google Map -->
+
 <!--========== END PAGE CONTENT ==========-->
 
 <!--========== FOOTER ==========-->
@@ -409,7 +459,7 @@
                         📦 Envíos a todo el país. <br>
                         ✉️ beatriz.rsmartino@gmail.com <br>
                         ☎️ (011) 4752-0142 <br>
-                        📱 (011) 15-3822-3885 <br>
+                        📱 Whatsapp: (011) 15-3822-3885 <br>
                         📍 Fábrica: Calle 6 Nº 4283 <br>
                         📍 Administración: Pasaje 103 Nº 325 <br>
                         🔸 Villa Lynch - Pcia. de Bs. As. Argentina

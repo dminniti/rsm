@@ -3,7 +3,7 @@
 $aviso = "";
 if ($_POST['email'] != "") {
     // email de destino
-    $email = "damianminniti@gmail.com";
+    $email = "beatriz.rsmartino@gmail.com";
 
     // asunto del email
     $subject = "Contacto - RSM";
@@ -14,7 +14,7 @@ if ($_POST['email'] != "") {
     $mensaje .= "---------------------------------- \n";
     $mensaje .= "NOMBRE:   " . $_POST['name'] . "\n";
     $mensaje .= "EMAIL:    " . $_POST['email'] . "\n";
-    $mensaje .= "WEB:    " . $_POST['phone'] . "\n";
+    $mensaje .= "TELEFONO:    " . $_POST['phone'] . "\n";
     $mensaje .= "FECHA:    " . date("d/m/Y") . "\n";
     $mensaje .= "HORA:     " . date("h:i:s a") . "\n";
     $mensaje .= "IP:       " . $_SERVER['REMOTE_ADDR'] . "\n\n";
