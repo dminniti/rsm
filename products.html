@@ -17,12 +17,13 @@
 
     <!-- Web Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i|Montserrat:400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
 
     <!-- Vendor Styles -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="css/animate.css" rel="stylesheet" type="text/css"/>
     <link href="vendor/themify/themify.css" rel="stylesheet" type="text/css"/>
     <link href="vendor/scrollbar/scrollbar.min.css" rel="stylesheet" type="text/css"/>
+    <link href="vendor/swiper/swiper.min.css" rel="stylesheet" type="text/css"/>
     <link href="vendor/cubeportfolio/css/cubeportfolio.min.css" rel="stylesheet" type="text/css"/>
 
     <!-- Theme Styles -->
@@ -33,7 +34,6 @@
     <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="img/favicon/site.webmanifest">
     <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
 
     <!--Start of Zendesk Chat Script-->
@@ -428,35 +428,86 @@
 <!--</div>-->
 <!--&lt;!&ndash; End Portfolio &ndash;&gt;-->
 
-
-<!--========== END PAGE CONTENT ==========-->
+<!-- Clients -->
+<div class="g-container--md g-padding-y-80--xs g-padding-y-100--sm">
+    <h3 class="text-center text-uppercase g-font-size-14--xs g-font-weight--700 g-color--primary g-letter-spacing--2 g-margin-b-25--xs">
+        Nuestros clientes</h3>
+    <hr>
+    <!-- Swiper Clients -->
+    <div class="s-swiper js__swiper-clients">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".2s">
+                    <img class="s-clients-v1" src="img/clientsImg/village.jpg" alt="Clients Logo">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".3s">
+                    <img class="s-clients-v1" src="img/clientsImg/minotauro.jpg" alt="Clients Logo">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".4s">
+                    <img class="s-clients-v1" src="img/clientsImg/cabj.jpg" alt="Clients Logo">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".5s">
+                    <img class="s-clients-v1" src="img/clientsImg/ypf.jpg" alt="Clients Logo">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".1s">
+                    <img class="s-clients-v1" src="img/clientsImg/elEspanol.jpg" alt="Clients Logo">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".1s">
+                    <img class="s-clients-v1" src="img/clientsImg/ghella.jpg" alt="Clients Logo">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".1s">
+                    <img class="s-clients-v1" src="img/clientsImg/trinidad.jpg" alt="Clients Logo">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Swiper Clients -->
+    <hr>
+</div>
+<!-- End Clients -->
 
 <!-- Feedback Form -->
-<div class="g-bg-color--dark" style="margin-top: 2em">
+<div class="g-bg-color--dark">
     <div class="container g-padding-y-80--xs g-padding-y-125--sm">
         <div class="g-text-center--xs g-margin-b-80--xs">
             <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--primary g-letter-spacing--2 g-margin-b-25--xs">
                 ¿ALGUNA DUDA?</p>
             <h2 class="g-font-size-32--xs g-font-size-36--md" style="color: #ffffff;">CONTACTANOS</h2>
         </div>
-        <form>
+        <form action="sender.php" method="post">
             <div class="row g-margin-b-40--xs">
                 <div class="col-sm-6 g-margin-b-20--xs g-margin-b-0--md">
                     <div class="g-margin-b-20--xs">
-                        <input type="text" class="form-control s-form-v2__input g-radius--50" placeholder="* Nombre">
+                        <input type="text" name="name" id="name" required="required"
+                               class="form-control s-form-v2__input g-radius--50" placeholder="* Nombre">
                     </div>
                     <div class="g-margin-b-20--xs">
-                        <input type="email" class="form-control s-form-v2__input g-radius--50" placeholder="* Email">
+                        <input type="email" name="email" id="email" required="required"
+                               class="form-control s-form-v2__input g-radius--50" placeholder="* Email">
                     </div>
-                    <input type="text" class="form-control s-form-v2__input g-radius--50" placeholder="* Teléfono">
+                    <input type="text" name="phone" id="phone" required="required"
+                           class="form-control s-form-v2__input g-radius--50" placeholder="* Teléfono">
                 </div>
                 <div class="col-sm-6">
-                    <textarea class="form-control s-form-v2__input g-radius--10 g-padding-y-20--xs" rows="8"
+                    <textarea name="comment" id="comment" required="required"
+                              class="form-control s-form-v2__input g-radius--10 g-padding-y-20--xs" rows="8"
                               placeholder="* Su mensaje..."></textarea>
                 </div>
             </div>
             <div class="g-text-center--xs">
-                <button type="submit"
+                <button name="btsend" id="btsend" type="submit"
                         class="text-uppercase s-btn s-btn--md s-btn--primary-bg g-radius--50 g-padding-x-80--xs">Enviar
                 </button>
             </div>
@@ -565,8 +616,12 @@
 <script type="text/javascript" src="vendor/jquery.smooth-scroll.min.js"></script>
 <script type="text/javascript" src="vendor/jquery.back-to-top.min.js"></script>
 <script type="text/javascript" src="vendor/scrollbar/jquery.scrollbar.min.js"></script>
-<script type="text/javascript" src="vendor/jquery.parallax.min.js"></script>
+<script type="text/javascript" src="vendor/vidbg.min.js"></script>
 <script type="text/javascript" src="vendor/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
+<script type="text/javascript" src="vendor/waypoint.min.js"></script>
+<script type="text/javascript" src="vendor/counterup.min.js"></script>
+<script type="text/javascript" src="vendor/swiper/swiper.jquery.min.js"></script>
+<script type="text/javascript" src="vendor/jquery.wow.min.js"></script>
 <script type="text/javascript"
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsXUGTFS09pLVdsYEE9YrO2y4IAncAO2U"></script>
 
@@ -574,9 +629,11 @@
 <script type="text/javascript" src="js/global.min.js"></script>
 <script type="text/javascript" src="js/components/header-sticky.min.js"></script>
 <script type="text/javascript" src="js/components/scrollbar.min.js"></script>
+<script type="text/javascript" src="js/components/portfolio-4-col-slider.min.js"></script>
+<script type="text/javascript" src="js/components/counter.min.js"></script>
+<script type="text/javascript" src="js/components/swiper.min.js"></script>
 <script type="text/javascript" src="js/components/google-map.js"></script>
-<script type="text/javascript" src="js/components/faq.min.js"></script>
-<script type="text/javascript" src="js/components/portfolio-3-col.min.js"></script>
+<script type="text/javascript" src="js/components/wow.min.js"></script>
 <!--========== END JAVASCRIPTS ==========-->
 
 </body>
